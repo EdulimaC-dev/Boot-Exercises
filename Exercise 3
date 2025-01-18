@@ -1,0 +1,12 @@
+def remove_duplicates(spells):
+    decluttered_spells = set()
+    optimized_spell_full_list = []
+    for spell in spells:
+        if spell not in decluttered_spells:
+            decluttered_spells.add(spell)
+            optimized_spell_full_list.append(spell)
+        
+
+
+    return optimized_spell_full_list
+        
