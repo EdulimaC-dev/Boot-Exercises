@@ -1,0 +1,5 @@
+def find_missing_ids(first_ids, second_ids):
+    first_ids_converted, second_ids_converted = set(first_ids), set(second_ids)
+    second_ids_converted = first_ids_converted - second_ids_converted
+    second_ids_converted = list(second_ids_converted)
+    return second_ids_converted
