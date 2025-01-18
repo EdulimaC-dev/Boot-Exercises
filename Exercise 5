@@ -1,0 +1,8 @@
+def count_vowels(text):
+    string_character_list = list(text)
+    vowel_accumulator = 0
+    for character in string_character_list:
+        if character.capitalize() == "A" or "I" or "U" or "E" or "O":
+            vowel_accumulator += 1
+    return vowel_accumulator
+    
