@@ -1,0 +1,14 @@
+def count_vowels(text):
+    string_character_list = list(text)
+    vowel_accumulator = 0
+    vowel_set = {"a", "i", "u", "e", "o", "A", "I", "U", "E", "O"}
+    vowel_actual_set = set()
+    
+    for character in string_character_list:
+        if character in vowel_set:
+            vowel_accumulator += 1
+            vowel_actual_set.add(character)
+    return vowel_accumulator, vowel_actual_set
+    
+
+count_vowels("Did someone say Thunderfury, Blessed Blade of the Windseeker?")
