@@ -1,0 +1,8 @@
+def remove_nonints(nums):
+    integer_elitist = []
+
+    for num in nums:
+        if type(num) == int:
+            integer_elitist.append(num)
+    return integer_elitist
+        
