@@ -1,0 +1,11 @@
+def process_transactions(purchase_orders):
+    print("The full list type:", type(purchase_orders))
+    print("First item type:", type(purchase_orders[0]))
+    print("First item contents:", purchase_orders[0])
+    
+    print("\nLet's look at the first iteration:")
+    for order in purchase_orders:
+        print(f"Current order dictionary: {order}")
+        print(f"This order's price: {order['price']}")
+        print(f"This order's available gold: {order['gold_available']}")
+        break  # Stop after first one
