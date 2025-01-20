@@ -1,0 +1,6 @@
+def join_strings(strings):
+    string_collection = ""
+    for string in strings:
+        string_collection += (string + ",")
+    return string_collection[:-1]
+        
