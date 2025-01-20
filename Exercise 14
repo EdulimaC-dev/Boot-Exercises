@@ -1,0 +1,12 @@
+def fizzbuzz(start, end):
+    fizz = []
+    for i in range(start, end):
+        if i % 3 == 0 and i % 5 == 0:
+            fizz.append("fizzbuzz")
+        elif i % 3 == 0:
+            fizz.append("fizz")
+        elif i % 5 == 0:
+            fizz.append("buzz")
+        else:
+            fizz.append(i)
+    return fizz
